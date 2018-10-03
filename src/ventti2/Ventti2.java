@@ -18,6 +18,9 @@ public class Ventti2 {
         // TODO code application logic here
         System.out.println("Hei tervetuloa pelaamaan");
         System.out.println("Kerron sinulle pelin säännöt");
+        System.out.println("Pelaajana pelaat jakajaa vastaan.");
+        System.out.println("Pelaajana pelaat kätesi ensin valmiiksi ja pelin voittaa se jonka käsi on lähempänä arvoa 21.");
+        System.out.println("");
     }
     
 }
