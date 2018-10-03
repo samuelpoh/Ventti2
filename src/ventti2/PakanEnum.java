@@ -11,4 +11,9 @@ package ventti2;
  */
 public enum PakanEnum {
     
+    Ruutu,
+    Risti,
+    Hertta,
+    Pata,
+    
 }
