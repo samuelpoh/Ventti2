@@ -17,7 +17,7 @@ import java.util.ArrayList;
        }
         public boolean checkPresence(int arvo){
         for(int i=0;i<kadet.size();i++){
-        
+        //komeetta
         //note you will need to implement getters to the Card class first
         if (kadet.get(i).getArvo==arvo)
         return true;
