@@ -11,10 +11,10 @@ public class Peli {
     public static void main(String[] args){
         Pelikortti kortti = new Pelikortti("Hertta",2);
         kortti.setTulos(2);
-        System.out.println(kortti);
+        //System.out.println(kortti);
         
         Pelikortti kortti2 = new Pelikortti("Hertta",3); 
-        System.out.println(kortti2);
+        //System.out.println(kortti2);
         
         //Luokka ventti = new Luokka("Ventti");
         //ventti.lisaaPelikortti(kortti);
