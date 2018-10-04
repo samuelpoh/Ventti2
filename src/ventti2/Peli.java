@@ -12,9 +12,6 @@ public class Peli {
         
         
         
-        
-        
-        
         Pelikortti kortti = new Pelikortti("Hertta",2);
         //kortti.setTulos(2);
         Pelikortti kortti2 = new Pelikortti("Hertta",3); 
