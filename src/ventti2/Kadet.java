@@ -19,7 +19,7 @@ import java.util.ArrayList;
         for(int i=0;i<kadet.size();i++){
         //komeetta
         //note you will need to implement getters to the Card class first
-        if (kadet.get(i).getArvo==arvo)
+        if (kadet.get(i).getArvo==arvo) //tää teki uuden int getArvo; peli.java luokkaan riville 18
         return true;
         }
         return false;
