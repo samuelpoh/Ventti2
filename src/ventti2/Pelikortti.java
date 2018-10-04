@@ -27,4 +27,6 @@ public class Pelikortti { //Kortti
     public String toString(){
         return ""+ this.nimi + " "+this.arvo;
     }
+    
+    
 }
