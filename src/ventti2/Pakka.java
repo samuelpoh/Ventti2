@@ -31,7 +31,7 @@ public class Pakka {
     }
     
     public Kortti DrawCard() {
-        int korttiPosition = shuffles.nextInt(Pakka.size());
+        int korttiPosition = Shuffles.nextInt(Pakka.size());
         return Pakka.remove(korttiPosition);
     }
     

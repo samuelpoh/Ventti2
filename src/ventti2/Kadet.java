@@ -14,8 +14,20 @@ import java.util.ArrayList;
             this.kadet.add(c);
             
         //You will also need method to check whether card of specific type is present:
+       
+        public boolean checkPresence(int arvo){
+        for(int i=0;i<kadet.size();i++){
+        
+        //note you will need to implement getters to the Card class first
+        if (kadet.get(i).getArvo==arvo)
+        return true;
+        }
+        return false;
+        } 
         
         
-}
+        
+        }
    }
+
          
