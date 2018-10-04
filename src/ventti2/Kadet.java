@@ -12,6 +12,10 @@ import java.util.ArrayList;
             
         public void addPeli(Peli c){
             this.kadet.add(c);
+            
+        //You will also need method to check whether card of specific type is present:
+        
+        
 }
    }
          
