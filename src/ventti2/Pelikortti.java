@@ -5,9 +5,9 @@ package ventti2;
  * @author Merja
  */
 public class Pelikortti { //Kortti
-    private final String nimi; //maa
+    private final int nimi; //maa
     private int arvo; //kortin arvo
-    
+
     /**
      *
      * @return
@@ -28,6 +28,7 @@ public class Pelikortti { //Kortti
           if (arvo == 12) tulos = "Kuningatar";
           if (arvo == 13) tulos = "Kuningas";
           
+          
           if (nimi == 1) tulos = tulos + " Ruutu";
           if (nimi == 2) tulos = tulos + " Hertta";
           if (nimi == 3) tulos = tulos + " Risti";
@@ -36,7 +37,13 @@ public class Pelikortti { //Kortti
           return arvo;
 }
     //konstruktori
-    public Pelikortti(String kortinmaa, int kortinarvo){ //public Kortti(String nimi, int luku)
+
+    /**
+     *
+     * @param kortinmaa
+     * @param kortinarvo
+     */
+    public Pelikortti(int kortinmaa, int kortinarvo){ //public Kortti(String nimi, int luku)
         this.nimi=kortinmaa; //Kortin maa;
         this.arvo=kortinarvo; //Kortin arvo
     }
