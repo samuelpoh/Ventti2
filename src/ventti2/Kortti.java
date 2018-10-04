@@ -1,63 +1,43 @@
-<<<<<<< Updated upstream
-/*
- * Lisätään korttien tyypit 
-To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
-package ventti2;
-
-/**
- *
- * @author Merja ja Samuel
- * 3.10.2018
- */
-public enum Kortti {
-=======
 
 package ventti2;
 
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.LinkedHashMap;
-
-public class Kortti {
+public class Kortti { //Kortti
+    
     
 
-    public static final ArrayList<String> SUITS = new ArrayList<>(Arrays.asList(
-            "Hertta", "Risti", "Pata", "Ruutu"
-    ));
+    private final int nimi; //maa
+    private final int arvo; //kortin arvo
 
-    public static final LinkedHashMap<String, ArrayList<Integer>> VALUES = new LinkedHashMap<>();
-
-    static {{
-        // Initialize values
-        VALUES.put("ässä", new ArrayList<>(Arrays.asList(1, 14)));
-        VALUES.put("kakkonen", new ArrayList<>(Arrays.asList(2)));
-        VALUES.put("kolmonen", new ArrayList<>(Arrays.asList(3)));
-        VALUES.put("nelonen", new ArrayList<>(Arrays.asList(4)));
-        VALUES.put("vitonen", new ArrayList<>(Arrays.asList(5)));
-        VALUES.put("kutonen", new ArrayList<>(Arrays.asList(6)));
-        VALUES.put("seiska", new ArrayList<>(Arrays.asList(7)));
-        VALUES.put("kasi", new ArrayList<>(Arrays.asList(8)));
-        VALUES.put("ysi", new ArrayList<>(Arrays.asList(9)));
-        VALUES.put("kymppi", new ArrayList<>(Arrays.asList(10)));
-        VALUES.put("jätkä", new ArrayList<>(Arrays.asList(11)));
-        VALUES.put("akka", new ArrayList<>(Arrays.asList(12)));
-        VALUES.put("kurko", new ArrayList<>(Arrays.asList(13)));    
-    }}
+    /**
+     *
+     * @return
+     */
+    public int Pelikortti() {
+          String tulos = "";
+          if (arvo == 1) tulos = "Ässä";
+          if (arvo == 2) tulos = "Kaksi";
+          if (arvo == 3) tulos = "Kolme";
+          if (arvo == 4) tulos = "Neljä";
+          if (arvo == 5) tulos = "Viisi";
+          if (arvo == 6) tulos = "Kuusi";
+          if (arvo == 7) tulos = "Seitsemän";
+          if (arvo == 8) tulos = "Kahdeksan";
+          if (arvo == 9) tulos = "Yhdeksän";
+          if (arvo == 10) tulos = "Kymmenen";
+          if (arvo == 11) tulos = "Jätkä";
+          if (arvo == 12) tulos = "Kuningatar";
+          if (arvo == 13) tulos = "Kuningas";
+          
+          
+          if (nimi == 1) tulos = tulos + " Ruutu";
+          if (nimi == 2) tulos = tulos + " Hertta";
+          if (nimi == 3) tulos = tulos + " Risti";
+          if (nimi == 2) tulos = tulos + " Pata";
     
-    private Integer arvo;
-    private final String nimi;
-    private final String maa;
-    
-    public Kortti(String nimi, String maa) {
-        this.nimi = nimi;
-        this.maa = maa;
+          return arvo;
+}
+    public Kortti(int arvo, int tulos) {
+        this.arvo = arvo;
+        this.nimi = tulos;
     }
-    
->>>>>>> Stashed changes
-    
-    
-    
 }
