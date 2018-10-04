@@ -7,6 +7,7 @@ public class Kortti { //Kortti
 
     private final int nimi; //maa
     private final int arvo; //kortin arvo
+    //kommentti turhasta
 
     /**
      *
